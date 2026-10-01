@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8edf5">
+<title>For Khushu ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Parisienne&display=swap');
+:root{--ink:#302638;--muted:#756879;--pink:#e8b9d1;--rose:#c980a7;--paper:#fffdfb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:radial-gradient(circle at 15% 12%,rgba(232,185,209,.34),transparent 24%),radial-gradient(circle at 85% 22%,rgba(221,209,232,.45),transparent 26%),linear-gradient(135deg,#fff9fb,#f8f2f7 55%,#fdf9f5);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+.page{min-height:100svh;position:relative;overflow:hidden}.container{width:min(920px,92%);margin:auto;position:relative;z-index:2}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:44px 0}.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(150,110,140,.16);box-shadow:0 10px 35px rgba(95,59,91,.08);font-size:11px;letter-spacing:2.2px;text-transform:uppercase}.badge span{color:#c56d98}
+h1{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,10vw,92px);line-height:.86;margin:24px 0 10px;font-weight:600;letter-spacing:-2px}.script{font-family:"Parisienne",cursive;font-size:clamp(32px,7vw,58px);color:#77527c;margin:0 0 26px}.sub{color:var(--muted);max-width:540px;margin:auto;font-size:15px;line-height:1.7}.scroll{margin-top:35px;color:#8d7287;font-size:12px;letter-spacing:1.8px;text-transform:uppercase}.arrow{display:block;margin:10px auto 0;animation:bob 1.8s infinite}@keyframes bob{50%{transform:translateY(7px)}}
+.flower{position:absolute;font-size:28px;opacity:.7;animation:float 6s ease-in-out infinite}.f1{left:5%;top:17%}.f2{right:8%;top:25%;animation-delay:1s}.f3{left:12%;bottom:18%;animation-delay:2s}.f4{right:13%;bottom:13%;animation-delay:3s}@keyframes float{50%{transform:translateY(-14px) rotate(6deg)}}
+.section{padding:90px 0}.center{text-align:center}.section h2{font-family:"Cormorant Garamond",serif;font-size:48px;margin:0 0 8px}.section .lead{color:var(--muted);margin:0 auto 35px;max-width:550px;line-height:1.7}
+.envelope-wrap{display:grid;place-items:center;min-height:430px}.envelope{width:min(520px,88vw);height:310px;position:relative;cursor:pointer;filter:drop-shadow(0 25px 25px rgba(93,55,85,.14));transition:transform .35s}.envelope:hover{transform:translateY(-6px)}
+.env-body{position:absolute;inset:35px 0 0;background:linear-gradient(145deg,#fffdf9,#f7e9ed);border:1px solid #d8bdc9;border-radius:16px;overflow:hidden}.env-body:before,.env-body:after{content:"";position:absolute;bottom:0;width:72%;height:2px;background:#d9bfca}.env-body:before{left:-9%;transform:rotate(29deg)}.env-body:after{right:-9%;transform:rotate(-29deg)}
+.flap{position:absolute;z-index:4;left:0;top:35px;width:0;height:0;border-left:260px solid transparent;border-right:260px solid transparent;border-top:155px solid #f4dfe7;transform-origin:50% 0;transition:transform .85s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 2px 1px rgba(80,40,65,.08))}
+.letter{position:absolute;z-index:2;left:7%;width:86%;bottom:18px;height:205px;background:var(--paper);border:1px solid #eadfe3;border-radius:12px;padding:22px;box-shadow:0 8px 25px rgba(70,40,65,.1);transition:transform .85s cubic-bezier(.2,.8,.2,1)}.letter h3{font-family:"Parisienne",cursive;font-size:32px;color:#76527c;margin:0 0 8px}.letter p{font-family:"Cormorant Garamond",serif;font-size:18px;line-height:1.35;margin:0}
+.seal{position:absolute;z-index:5;left:50%;top:175px;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#d890ad;color:white;font-size:25px;box-shadow:0 5px 16px rgba(125,65,95,.22);transition:opacity .4s}.envelope.open .flap{transform:rotateX(180deg);z-index:1}.envelope.open .letter{transform:translateY(-145px);z-index:6}.envelope.open .seal{opacity:0}.tap{margin-top:20px;color:#8c7283;font-size:13px}
+.message-card{background:rgba(255,255,255,.74);border:1px solid rgba(130,90,120,.15);border-radius:28px;padding:clamp(26px,6vw,55px);box-shadow:0 25px 80px rgba(75,44,69,.10);backdrop-filter:blur(12px)}.message-card h2{font-size:52px}.message-card p{font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.65;margin:13px 0}.signature{font-family:"Parisienne",cursive;color:#77527c;font-size:38px;margin-top:24px}
+.memories{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.memory{background:#fffaf7;padding:10px 10px 18px;border-radius:10px;box-shadow:0 14px 35px rgba(75,44,69,.12);transform:rotate(-2deg);transition:transform .25s}.memory:nth-child(2){transform:rotate(2deg)}.memory:nth-child(3){transform:rotate(-1deg)}.memory:hover{transform:translateY(-7px) rotate(0)}.memory img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:5px}.memory strong{display:block;font-family:"Cormorant Garamond",serif;font-size:25px;margin-top:12px}.memory small{display:block;color:#806d7d;margin-top:3px}
+.music-card{margin:30px auto 0;max-width:520px;padding:22px;border-radius:24px;background:rgba(255,255,255,.68);border:1px solid rgba(130,90,120,.14);box-shadow:0 18px 50px rgba(75,44,69,.08)}.music-title{font-family:"Cormorant Garamond",serif;font-size:29px}.music-sub{color:var(--muted);font-size:13px;margin:5px 0 17px}.music-btn,.heart-btn{border:0;border-radius:999px;padding:14px 22px;background:#d890ad;color:white;font:600 14px "DM Sans";box-shadow:0 12px 30px rgba(125,65,95,.22);cursor:pointer;text-decoration:none;display:inline-block}.music-note{font-size:28px}
+.final{text-align:center;padding:110px 0 130px}.final h2{font-family:"Cormorant Garamond",serif;font-size:clamp(46px,9vw,78px);margin:0}.final p{font-family:"Parisienne",cursive;color:#77527c;font-size:38px;margin:12px 0 30px}
+footer{text-align:center;padding:0 0 30px;color:#a08d9c;font-size:12px}.heart{position:fixed;z-index:15;pointer-events:none;font-size:18px;animation:rise 4s linear forwards}@keyframes rise{from{transform:translateY(0) scale(.8);opacity:0}10%{opacity:1}to{transform:translateY(-110vh) translateX(var(--drift)) rotate(20deg) scale(1.35);opacity:0}}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:650px){.memories{grid-template-columns:1fr 1fr}.memory:last-child{grid-column:1/-1;max-width:48%;margin:auto;width:100%}.envelope{height:275px}.flap{border-left-width:44vw;border-right-width:44vw;border-top-width:130px}.letter{height:190px}.envelope.open .letter{transform:translateY(-125px)}}
+</style>
+</head>
+<body>
+<main class="page">
+<span class="flower f1">🌸</span><span class="flower f2">🌷</span><span class="flower f3">🌼</span><span class="flower f4">🪻</span>
+
+<section class="hero">
+<div class="container">
+<div class="badge">♥ &nbsp; FOR THE GIRL I ADORE</div>
+<h1>Happy Girlfriend's Day,<br>Khushu ♡</h1>
+<p class="script">a little world, made just for you</p>
+<p class="sub">A tiny corner of the internet made especially for the girl who means the world to me.</p>
+<div class="scroll">scroll slowly <span class="arrow">↓</span></div>
+</div>
+</section>
+
+<section class="section reveal">
+<div class="container center">
+<h2>A little letter for you</h2>
+<p class="lead">There is something waiting inside. Tap the envelope. 💌</p>
+<div class="envelope-wrap">
+<div class="envelope" id="envelope">
+<div class="letter"><h3>My Khushu,</h3><p>Crush you so much. I am a little late, but happy Girlfriend's Day, my love. ❤️</p></div>
+<div class="env-body"></div><div class="flap"></div><div class="seal">♡</div>
+</div>
+</div>
+<div class="tap">tap the envelope to open it</div>
+</div>
+</section>
+
+<section class="section reveal" id="fullLetter" style="display:none">
+<div class="container">
+<div class="message-card">
+<div class="center"><div class="badge">♡ &nbsp; JUST FOR YOU</div><h2>My letter to you</h2></div>
+<p>Crush you so much.</p>
+<p>I am a little late, but happy Girlfriend's Day, my love.</p>
+<p>You are the bestestestestest gift I've ever received from God. You are the best. I cannot explain you in words.</p>
+<p>It's almost been two years now. What a magical, magical journey we have had, and many more to go with you.</p>
+<p>I'm booked for you.</p>
+<p>This was a small gift for you, and I love you so much. I'm sorry for being late, but I guess you'll find this special, you.</p>
+<div class="center signature">Forever yours ♡</div>
+</div>
+</div>
+</section>
+
+<section class="section reveal">
+<div class="container center">
+<h2>Our little memories</h2>
+<p class="lead">Three little moments I wanted to keep here for you.</p>
+<div class="memories">
+<div class="memory"><img src="images/memory-1.jpg" alt="A memory together"><strong>Us ♡</strong><small>one of my favourite pictures of us</small></div>
+<div class="memory"><img src="images/memory-2.jpg" alt="A memory together"><strong>My favourite girl</strong><small>another little moment worth keeping</small></div>
+<div class="memory"><img src="images/memory-3.jpg" alt="A memory together"><strong>Always us</strong><small>and many more memories to come</small></div>
+</div>
+</div>
+</section>
+
+<section class="section reveal">
+<div class="container center">
+<h2>Our song</h2>
+<div class="music-card">
+<div class="music-note">🎧</div>
+<div class="music-title">The Sailor Song</div>
+<div class="music-sub">A little song for us.</div>
+<a class="music-btn" href="https://www.youtube.com/results?search_query=The+Sailor+Song+Gigi+Perez" target="_blank" rel="noopener">♡ Play our song</a>
+</div>
+</div>
+</section>
+
+<section class="final reveal">
+<div class="container"><h2>And one last thing...</h2><p>I'd choose you again.</p><button class="heart-btn" id="heartBtn">tap for a little surprise ♡</button></div>
+</section>
+<footer>made with a lot of love · for Khushu ♡</footer>
+</main>
+
+<script>
+const envelope=document.getElementById('envelope'), fullLetter=document.getElementById('fullLetter');
+envelope.addEventListener('click',()=>{
+ envelope.classList.toggle('open');
+ if(envelope.classList.contains('open')){
+   setTimeout(()=>{fullLetter.style.display='block';requestAnimationFrame(()=>fullLetter.scrollIntoView({behavior:'smooth',block:'start'}));},650);
+   hearts(12);
+ }
+});
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+function heart(x=Math.random()*100,delay=0){const h=document.createElement('div');h.className='heart';h.textContent=['♡','♥','❤','✦'][Math.floor(Math.random()*4)];h.style.left=x+'vw';h.style.bottom='-30px';h.style.setProperty('--drift',(Math.random()*140-70)+'px');h.style.animationDelay=delay+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),4500+delay*1000)}
+function hearts(n=18){for(let i=0;i<n;i++)heart(Math.random()*100,i*.08)}
+document.getElementById('heartBtn').addEventListener('click',()=>{hearts(35);document.getElementById('heartBtn').textContent='♡ you are very loved ♡'});
+</script>
+</body>
+</html>
